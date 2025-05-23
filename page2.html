@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Обо мне | Burnglacier</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио | Burnglacier</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -23,8 +23,8 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle at center, #6a11cb 0%, #2575fc 100%);
-      animation: rotate 20s linear infinite;
+      background: radial-gradient(circle at center, #7b2ff7 0%, #f107a3 100%);
+      animation: rotate 30s linear infinite;
       z-index: -2;
     }
 
@@ -35,32 +35,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.5);
       z-index: -1;
     }
 
     @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    header {
-      padding: 50px 20px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 20px;
-      line-height: 1.6;
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
     nav {
@@ -79,8 +60,18 @@
       color: #ddd;
     }
 
+    header {
+      padding: 50px 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
     section {
       padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
       opacity: 0;
       transform: translateY(30px);
       animation: fadeInUp 1s forwards;
@@ -92,24 +83,41 @@
         transform: none;
       }
     }
+
+    .work-preview {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .soon {
+      color: #ccc;
+      font-style: italic;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html">Главная</a>
     <a href="page2.html">Портфолио</a>
+    <a href="about.html">Обо мне</a>
     <a href="contact.html">Контакты</a>
   </nav>
 
   <header>
-    <h1>Обо мне</h1>
-    <p>burnglacier — это не просто ник, это путь. Здесь немного больше, чем просто «обо мне».</p>
+    <h1>Портфолио</h1>
+    <p>Мои проекты, над которыми я работаю и которые скоро появятся здесь.</p>
   </header>
 
   <section>
-    <p>Я обычний парень в другой стране. Мне 21. Я мечтаю о семье, собственном доме, машине и бизнесе. Очень хочу найти баланс между стабильностью и свободой.</p>
-    <p>В душе я человек справедливый, задумчивый, добрый и немного одиночка. Ценю тишину, честность и глубину. Порой сложно справляться с рутиной, но я иду вперёд — шаг за шагом. Учусь веб-разработке, хочу зарабатывать головой и творчеством, а не только руками. Всё это — часть моей истории, и ты сейчас на её странице.</p>
-    <p>Burnglacier — это холод снаружи и огонь внутри.</p>
+    <div class="work-preview">
+      <h2>Работа #1</h2>
+      <p>Это первый проект, над которым я работаю. Скоро здесь появится больше информации и другие работы.</p>
+    </div>
+
+    <p class="soon">Остальные работы появятся совсем скоро…</p>
   </section>
 </body>
 </html>
